@@ -1,8 +1,4 @@
-# Udacity CICD Pipeline Project
-
-[![Python application test with Github Actions](https://github.com/konradsemsch/udacity-2021-building-cicd-pipeline-project/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/konradsemsch/udacity-2021-building-cicd-pipeline-project/actions/workflows/pythonapp.yml)
-
-##  Overview
+# Overview
 
 <TODO: complete this with an overview of your project>
 
@@ -51,6 +47,5 @@ Port: 443
 ## Demo 
 
 <TODO: Add link Screencast on YouTube>
-
 
 
