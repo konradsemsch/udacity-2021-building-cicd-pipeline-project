@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/konradsemsch/Private/udacity/2-agile-development-with-azure/4-project'
+python3 -m venv ~/.udacity-devops
+make: Leaving directory `/Users/konradsemsch/Private/udacity/2-agile-development-with-azure/4-project'
+ 

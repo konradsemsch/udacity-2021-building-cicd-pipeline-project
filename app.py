@@ -23,7 +23,6 @@ def home():
     html = "<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
 
-# TO DO:  Log out the prediction value
 @app.route("/predict", methods=['POST'])
 def predict():
     """Performs an sklearn prediction
@@ -56,7 +55,8 @@ def predict():
 
     try:
         clf = joblib.load("boston_housing_prediction.joblib")
-    except:
+    except Exception as e:
+        LOG.info(e)
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
 
@@ -66,7 +66,8 @@ def predict():
     LOG.info("inference payload DataFrame: %s inference_payload")
     scaled_payload = scale(inference_payload)
     prediction = list(clf.predict(scaled_payload))
+    LOG.info("predicted value: %s prediction")
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=8000, debug=True)

@@ -1,0 +1,324 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Thu Oct 28 17:26:32 2021
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+LC_CTYPE = UTF-8
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+CPPFLAGS = -I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/konradsemsch/Private/udacity/2-agile-development-with-azure/4-project
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# environment
+PCW_SIGNUP_PREDICTION_USER = gitlab+deploy-token-14
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/4d/9xxbvwwn327fd3pxkn8yz1ww0000gn/T/vscode-ipc-b3d3c997-96aa-4633-8074-6268d269666a.sock
+# environment
+VSCODE_CWD = /Users/konradsemsch/Private/udacity/2-agile-development-with-azure/4-project
+# environment
+PATH = /usr/local/bin:/Users/konradsemsch/.poetry/bin:/usr/local/Cellar/pyenv-virtualenv/1.1.5/shims:/Users/konradsemsch/.pyenv/shims:/Users/konradsemsch/.pyenv/shims:/Users/konradsemsch/.pyenv/bin:/usr/local/opt/node@12/bin:/usr/local/opt/node@10/bin:/Users/konradsemsch/anaconda3/bin:/Users/konradsemsch/.serverless/bin:/usr/local/Cellar/pyenv-virtualenv/1.1.5/shims:/Users/konradsemsch/.pyenv/shims:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/konradsemsch/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+AZURE_CONFIG_DIR = /Users/konradsemsch/.azure
+# environment
+LaunchInstanceID = F5AFF59D-20C4-4DFA-A6FA-1594FCF2A8DE
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+PYENV_ROOT = /Users/konradsemsch/.pyenv
+# environment
+LDFLAGS = -L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.G48cXZV9g6/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+MLPASSWORD = Sranie!991Wbanie
+# environment
+PWD = /Users/konradsemsch/Private/udacity/2-agile-development-with-azure/4-project
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+PYENV_SHELL = zsh
+# environment
+HOME = /Users/konradsemsch
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/konradsemsch/Library/Application Support/Code/CachedData/c13f1abb110fc756f9b3a6f16670df9cd9d4cf63
+# environment
+LOGNAME = konradsemsch
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+ZSH = /Users/konradsemsch/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+LC_TERMINAL = iTerm2
+# environment
+SHLVL = 3
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = konradsemsch
+# makefile
+.DEFAULT_GOAL := setup
+# default
+MAKECMDGOALS := all
+# environment
+TERM_SESSION_ID = w0t1p1:639D18E8-5AA3-4382-A09C-FE49E1216B85
+# environment
+PCW_RANK_PREDICTION_PASSWORD = zMbSUrGsra74-txysYYe
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/4d/9xxbvwwn327fd3pxkn8yz1ww0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/konradsemsch/Library/Application Support/Code/1.61.1-main.sock
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 3.4.8
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.52616537.52616543.4642C18C-28AF-4D86-9583-8E411B6620B4
+# environment
+LC_TERMINAL_VERSION = 3.4.8
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+ITERM_SESSION_ID = w0t1p1:639D18E8-5AA3-4382-A09C-FE49E1216B85
+# environment
+PCW_RANK_PREDICTION_USER = gitlab+deploy-token-12
+# environment
+COLORFGBG = 15;0
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+ITERM_PROFILE = Default
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a8
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+PYENV_VIRTUALENV_INIT = 1
+# default
+.INCLUDE_DIRS = /usr/local/include
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 82512
+# environment
+PCW_SIGNUP_PREDICTION_PASSWORD = KgRiVUk1tL6s_k4fAQoq
+# environment
+STARSHIP_SHELL = zsh
+# environment
+MLHOST = ml-showcase.cy0g9vrc2v0s.eu-central-1.rds.amazonaws.com
+# variable set hash-table stats:
+# Load=95/1024=9%, Rehash=0, Collisions=4/121=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777220, inode 53016781): 23 files, no impossibilities.
+
+# 23 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+setup:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 2):
+	python3 -m venv ~/.udacity-devops
+	
+
+all: install lint test
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/2=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-09-28 07:54:15
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+test:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 9):
+	#python -m pytest -vv --cov=myrepolib tests/*.py
+	#python -m pytest --nbval notebook.ipynb
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lint:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 14):
+	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
+	pylint --disable=R,C,W1203 app.py
+	
+
+install:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := install
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/10=10%
+#  commands to execute (from `Makefile', line 5):
+	pip install --upgrade pip &&\
+	pip install -r requirements.txt
+	
+
+# files hash-table stats:
+# Load=8/1024=1%, Rehash=0, Collisions=0/25=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Thu Oct 28 17:26:32 2021
+
+ 
