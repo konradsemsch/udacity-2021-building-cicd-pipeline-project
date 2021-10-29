@@ -15,7 +15,10 @@ jobs:
         python-version: 3.5
     - name: Install dependencies
       run: |
+        make setup
         make install
+        wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64
+        chmod +x /bin/hadolint
     - name: Lint with pylint
       run: |
         make lint
