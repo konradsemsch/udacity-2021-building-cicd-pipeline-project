@@ -1,29 +1,14 @@
-# Python to Linux Web App on Azure
-# Build your Python project and deploy it to Azure as a Linux Web App.
-# Change python version to one thats appropriate for your application.
-# https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
 - main
 
 variables:
-  # Azure Resource Manager connection created during pipeline creation
   azureServiceConnectionId: '7c48606a-8a13-4f9f-ae4d-035731b90f0e'
-
-  # Web app name
   webAppName: 'udacity-ks-flask-ml-service'
-
-  # Agent VM image name
   vmImageName: 'ubuntu-latest'
-
-  # Environment name
   environmentName: 'udacity-ks-flask-ml-service'
-
-  # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
-
-  # Python version: 3.7
-  pythonVersion: '3.7'
+  pythonVersion: '3.5'
 
 stages:
 - stage: Build
@@ -39,11 +24,8 @@ stages:
       displayName: 'Use Python $(pythonVersion)'
 
     - script: |
-        python -m venv antenv
-        source antenv/bin/activate
-        python -m pip install --upgrade pip
-        pip install setup
-        pip install -r requirements.txt
+        make setup
+        make install
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
 

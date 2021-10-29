@@ -1,4 +1,3 @@
-
 pytest
 pylint
 Flask==1.0.2

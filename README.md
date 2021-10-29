@@ -3,10 +3,9 @@
 This project demonstrates how to deploy a CICD pipeline of a an ML application running in Flask and deployed to Azure Apps. It includes continuous integration with a Github repo where testing and linting is performed, as well as, continuous deployed using Azure Pipelines.
 
 ## Project Plan
-<TODO: Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* [Trello Board](https://trello.com/b/rVxX1sFy/udacity-cicd-project)
+* [Project Plan](https://docs.google.com/spreadsheets/d/1gvJu9XE6scDEOVSmdXY8m4HpFsSAvWFCr14_eqi43Uo/edit?usp=sharing)
 
 ## Instructions
 
