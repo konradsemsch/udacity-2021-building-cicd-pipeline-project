@@ -1,6 +1,6 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+This project demonstrates how to deploy a CICD pipeline of a an ML application running in Flask and deployed to Azure Apps. It includes continuous integration with a Github repo where testing and linting is performed, as well as, continuous deployed using Azure Pipelines.
 
 ## Project Plan
 <TODO: Project Plan
@@ -10,8 +10,7 @@
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+![architecture](./diagrams/architecture.png)
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
