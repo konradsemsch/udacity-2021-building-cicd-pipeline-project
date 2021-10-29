@@ -1,3 +1,4 @@
+SHELL = /bin/bash
 setup:
 	python3 -m venv .udacity-devops-test
 	cd .udacity-devops-test/bin && source activate
