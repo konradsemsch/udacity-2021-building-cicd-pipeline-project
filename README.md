@@ -9,41 +9,68 @@ This project demonstrates how to deploy a CICD pipeline of a an ML application r
 
 ## Instructions
 
+### Architecture Diagram
+
 ![architecture](./diagrams/architecture.png)
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+### How To Reproduce
 
-* Project running on Azure App Service
+The end goal of this project is to deploy an app in Azure App Service. After a successful deployment you should see the following page after going to your specified app URL:
 
-* Project cloned into Azure Cloud Shell
+![webpage](./screenshots/readme/screenshot_1_app_webpage.png)
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
 
-* Output of a test run
+and when invoking the `make_predict_azure_app.sh` in Azure Cloud Shell you should get a predicted value:
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+![cloud_shell](./screenshots/readme/screenshot_2_cloud_shell_prediction.png)
 
-* Running Azure App Service from Azure Pipelines automatic deployment
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+In order to achieve that you should clone the project into the Azure Cloud Shell and deploy your application using `az webapp up -n <APP_NAME>` in your cloned project's root directory.
 
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
+![cloud_shell](./screenshots/readme/screenshot_3_cloud_shell_deploy.png)
 
-* Output of streamed log files from deployed application
 
-> 
+Also, when cloning and running the project locally, you can make use of the `Makefile` in order to create your project's virtual environment. For that run the command: `make setup`.
+
+The next step involves installing all dependencies listed in `requirements.txt` and performing basic linting and unit tests to verify if everything works as expected. For that, you could run the command `make all`, which gives the following output:
+
+![make_all](./screenshots/readme/screenshot_4_make_all.png)
+
+
+You could also run an individual test by running `pytest test_scale.py` which gives the following output when successful:
+
+![pytest](./screenshots/readme/screenshot_5_pytest.png)
+
+
+As indicated in the first architecture diagram, this project has an integrated CICD pipeline that uses both `Github Actions`, as well as `Azure Pipelines`. The first one is used for performing Continuous Integration (linting and testing), while the second for Continuous Deployment (deploying the application to Azure). Both pipeline configuration files can be found in `.github/workflows/pythonapp.yml` and `azure-pipelines.yml` respectively.
+
+On each push to the Github repository, an action is triggered and the CI pipelines runs with the following information: 
+
+![github_actions](./screenshots/readme/screenshot_6_github_actions.png)
+
+
+Additionally, Azure Pipeline is triggered and the CD pipelines deploys the application to Azure. For more information check the official Azure documentation: [link](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+
+![azure_pipelines_1](./screenshots/readme/screenshot_7_azure_pipelines_1.png)
+
+
+![azure_pipelines_2](./screenshots/readme/screenshot_8_azure_pipelines_2.png)
+
+
+![azure_pipelines_3](./screenshots/readme/screenshot_9_azure_pipelines_3.png)
+
+Lastly, you could review your application logs in the Azure Portal to get more detailed information about the app's behavior:
+
+![app_logs](./screenshots/readme/screenshot_10_azure_app_logs.png)
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+* write further unit and integration tests
+* add further code checks using flake8 and black
+* use less managed services from Azure to reduce operational costs
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+[Video walkthrough of the application]()
 
 
