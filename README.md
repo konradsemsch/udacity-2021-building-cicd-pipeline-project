@@ -71,6 +71,6 @@ Lastly, you could review your application logs in the Azure Portal to get more d
 
 ## Demo 
 
-[Video walkthrough of the application]()
+[Video walkthrough of the application](https://youtu.be/aFfR4yUZ8-Q)
 
 
