@@ -25,7 +25,9 @@ and when invoking the `make_predict_azure_app.sh` in Azure Cloud Shell you shoul
 ![cloud_shell](./screenshots/readme/screenshot_2_cloud_shell_prediction.png)
 
 
-In order to achieve that you should clone the project into the Azure Cloud Shell and deploy your application using `az webapp up -n <APP_NAME>` in your cloned project's root directory.
+In order to achieve that you should clone the project into the Azure Cloud Shell using ` git clone <REPO_URL>` and deploy your application using `az webapp up -n <APP_NAME>` in your cloned project's root directory.
+
+![cone_repo](./screenshots/readme/screenshot_3_clone_repo.png)
 
 ![cloud_shell](./screenshots/readme/screenshot_3_cloud_shell_deploy.png)
 
