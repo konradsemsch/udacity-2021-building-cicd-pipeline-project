@@ -1,3 +1,5 @@
+[![Udacity CICD Project - CI with Github Actions](https://github.com/konradsemsch/udacity-2021-building-cicd-pipeline-project/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/konradsemsch/udacity-2021-building-cicd-pipeline-project/actions/workflows/pythonapp.yml)
+
 # Overview
 
 This project demonstrates how to deploy a CICD pipeline of a an ML application running in Flask and deployed to Azure Apps. It includes continuous integration with a Github repo where testing and linting is performed, as well as, continuous deployed using Azure Pipelines.
