@@ -1,7 +1,7 @@
 SHELL = /bin/bash
 setup:
-	python3 -m venv .udacity-devops-test
-	cd .udacity-devops-test/bin && source activate
+	python3 -m venv .udacity-devops-3.6.0
+	cd .udacity-devops-3.6.0/bin && source activate
 	brew install hadolint
 
 install:

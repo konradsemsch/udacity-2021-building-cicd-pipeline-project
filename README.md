@@ -63,10 +63,13 @@ Additionally, Azure Pipeline is triggered and the CD pipelines deploys the appli
 
 ![azure_pipelines_3](./screenshots/readme/screenshot_9_azure_pipelines_3.png)
 
-Lastly, you could review your application logs in the Azure Portal to get more detailed information about the app's behavior:
+Moreover, you could review your application logs in the Azure Portal to get more detailed information about the app's behavior:
 
 ![app_logs](./screenshots/readme/screenshot_10_azure_app_logs.png)
 
+Lastly, you could also loadtest your application by using the `locust` framework for example, which in this case simulates a total of 100 requests made against the API:
+
+![app_logs](./screenshots/readme/screenshot_10_locust_load_test.png)
 ## Enhancements
 
 * write further unit and integration tests
